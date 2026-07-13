@@ -13,16 +13,16 @@ import {View, Text, TextInput, TouchableOpacity,
 
     return (
         <View>
-            <TouchableOpacity style={styles.button} onPress={() => navigation.navigate('Cadastro')}>
-                <Text style={styles.buttonText}>Cadastrar</Text>
+            <TouchableOpacity style={styles.button} onPress={() => navigation.navigate('cF_raca')}>
+                <Text style={styles.buttonText}>Raça</Text>
             </TouchableOpacity>
 
-            <TouchableOpacity style={styles.button} onPress={() => navigation.navigate('login')}>
-                <Text style={styles.buttonText}>Login</Text>
+            <TouchableOpacity style={styles.button} onPress={() => navigation.navigate('cF_classe')}>
+                <Text style={styles.buttonText}>Classe</Text>
             </TouchableOpacity>
 
-            <TouchableOpacity style={styles.button} onPress={() => navigation.navigate('listaUsuarios')}>
-                <Text style={styles.buttonText}>Cadastrar</Text>
+            <TouchableOpacity style={styles.button} onPress={() => navigation.navigate('cF_origem')}>
+                <Text style={styles.buttonText}>Origem</Text>
             </TouchableOpacity>
 
         </View>

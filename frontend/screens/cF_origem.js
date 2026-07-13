@@ -13,7 +13,7 @@ import {View, Text, TextInput, TouchableOpacity,
 
     return (
         <View>
-            <Text>página de raça</Text>
+            <Text>página de origem</Text>
         </View>
 
     )

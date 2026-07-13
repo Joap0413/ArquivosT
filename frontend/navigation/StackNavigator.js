@@ -11,6 +11,8 @@ import transicao from '../screens/transicao'
 import principal from "../screens/principal"
 import criarFicha from "../screens/criarFicha"
 import cF_raca from "../screens/cF_raca"
+import cF_classe from "../screens/cF_classe"
+import cF_origem from "../screens/cF_origem"
 
 const Stack = createNativeStackNavigator();
 
@@ -32,6 +34,10 @@ export default function StackNavigator() {
         <Stack.Screen name="criarFicha" component={criarFicha} />
 
         <Stack.Screen name="cF_raca" component={cF_raca} />
+
+        <Stack.Screen name="cF_classe" component={cF_classe} />
+
+        <Stack.Screen name="cF_origem" component={cF_origem} />
       
       </Stack.Navigator>
       
