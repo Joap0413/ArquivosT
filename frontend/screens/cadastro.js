@@ -1,7 +1,6 @@
 import { useState } from 'react';
 
-import{ View, Text, TextInput, TouchableOpacity, 
-    StyleSheet, Alert } from 'react-native';
+import{ View, Text, TextInput, TouchableOpacity, StyleSheet, Alert } from 'react-native';
 
 export default function Cadastro({navigation}) {
 
