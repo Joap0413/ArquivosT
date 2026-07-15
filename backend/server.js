@@ -12,7 +12,7 @@ app.use(express.json());
 app.post('/usuarios', async (req, res) => {
     const {nome, email, senha} = req.body;
 
-    const sql = `INSERT INTO usuarios 
+    const sql = `INSERT INTO usuario 
     (nome, email, senha) VALUES (?, ?, ?)`;
 
     const senhaCriptografada = await bcrypt.hash(senha, 10);
@@ -36,7 +36,7 @@ app.post('/usuarios', async (req, res) => {
 
 
 app.get('/usuarios', (req, res) => {
-    const sql = "SELECT * FROM usuarios";
+    const sql = "SELECT * FROM usuario";
 
     conexao.query(sql, (erro, resultado) => {
         if (erro) {
@@ -53,7 +53,7 @@ app.get('/usuarios', (req, res) => {
 app.post('/login', (req, res) => {
     const {email, senha} = req.body;
 
-    const query = `SELECT * FROM usuarios WHERE email = ?`;
+    const query = `SELECT * FROM usuario WHERE email = ?`;
     
     conexao.query(query, [email], async (erro, resultado) => {
         if (erro) {
